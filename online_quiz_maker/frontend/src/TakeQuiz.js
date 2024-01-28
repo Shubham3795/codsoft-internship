@@ -1,8 +1,9 @@
 import {useEffect, useState} from 'react';
 import './TakeQuiz.css';
+import CreateQuiz from './CreateQuiz';
 function TakeQuiz(){
 
-    const quizWhole=[{QN0:1,Q:"2+4=?",opt:{a:"6",b:"4",c:"8"},ansQ1:"a",givenAns:"", visited:true},
+    const quizWhole=[{QN0:1,Q:"2+4=?",opt:{a:"6",b:"4",c:"8",d:""},ansQ1:"a",givenAns:"", visited:true},
         {QN0:2, Q:"4+4=?",opt:{a:"60",b:"40",c:"8"},ansQ1:"a",givenAns:"", visited:false},
         {QN0:3, Q:"56+4=?",opt:{a:"60",b:"40",c:"8"},ansQ1:"a",givenAns:"", visited:false}];
 
@@ -125,6 +126,7 @@ function TakeQuiz(){
                     value={quiz.at(index).QN0}
                     onClick={next}>next</button>
             </div>
+            <CreateQuiz></CreateQuiz>
         </>
     );
 }

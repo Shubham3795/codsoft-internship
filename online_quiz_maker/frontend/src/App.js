@@ -1,12 +1,13 @@
 import './App.css';
-import TakeQuiz from './TakeQuiz';
+import CreateQuiz from './CreateQuiz';
+// import TakeQuiz from './TakeQuiz';
 // import ChooseCreateOrTakeQuiz from './ChooseCreateOrTakeQuiz';
 // import Login from './Login';
 
 function App() {
 
   return (
-     <TakeQuiz></TakeQuiz>
+     <CreateQuiz></CreateQuiz>
   );
 }
 
